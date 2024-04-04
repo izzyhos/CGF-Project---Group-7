@@ -1,0 +1,306 @@
+*{
+  font-family: Poppins;
+}
+
+/* This is the CSS for the restaurant page */
+
+/* This is the CSS for the cards */
+.btn-primary{
+    display: block;
+    padding: 5px;
+    color: white;
+    width:30%;
+    font-size: 13px;
+    border-radius: 2px;
+    margin: 0 auto;
+    background-color: #078495;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  color: #01529D;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #01529D;
+    transition: 0.5s ease-in-out;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height: 300px;
+}
+
+/* This is the CSS for the intro text and heading on resto page and attractions page */
+.restaurant-heading, .attractions-heading{
+    padding-left: 50px;
+    text-align: center;
+    border: 1px black solid;
+    color: #01529D;
+}
+
+.attractions-intro, .restaurant-intro{
+    padding-left: 50px;
+}
+
+/* This is the CSS for the Nav Bar */
+.navigation ul {
+    font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+.navigation li{
+    display: inline-block;
+}
+.navigation a {
+    background: #ffffff;
+    border: 1px solid black;
+    color: #060606;
+    padding: 12px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    background: #efa7e2;
+  }
+
+  .logo {
+    width: 100px;
+    display: inline-block;
+  }
+
+  /* This is the CSS for the home page */
+
+  body, html {
+    height: 100%;
+  }
+  
+  /* The hero image */
+  .hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:linear-gradient(rgba(204, 191, 191, 0.5), rgba(121, 118, 118, 0.5)), url("Lanzarote\ Hero\ Image.jpg");
+  /* Set a specific height */
+  height: 50%;
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(23, 22, 22);
+  }
+  body {
+    background: #fdfdfd;
+  }
+  
+  /* Search Bar */
+  
+  .hero--video {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 600px;
+  }
+  
+  .hero video {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .hero .search {
+    position: relative;
+    vertical-align: middle;
+    z-index: 2;
+  }
+  
+  .hero .search input {
+    width: 100%;
+    height: 76px;
+    line-height: 76px;
+    border: 1px solid #111;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 27px;
+    padding: 5px 5px 5px 47px;
+    color: #fff;
+    position: relative;
+    border-radius: 0;
+  }
+  
+ 
+  
+  /* Navigation Bar */
+  
+  .menu-hamburger {
+    bottom: calc(50% - 10px);
+    right: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-hamburger span {
+    width: 30px;
+    height: 4px;
+    display: block;
+    background: #fafafa;
+    margin-bottom: 4px;
+  }
+  
+  .menu-hamburger span:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  nav {
+    background: #010101;
+    z-index: 3;
+  }
+  
+  nav .navbar-nav li.navbar-item {
+    line-height: 110px;
+    margin-left: -5px;
+  }
+  
+  nav .navbar-nav li.navbar-item a {
+    padding: 0 20px;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 575.98px) {
+    nav.h-navbar {
+      max-height: 70px;
+    }
+  
+    nav .navbar-header img {
+      max-width: 70px;
+    }
+  
+    .menu-hamburger {
+      bottom: calc(50% - 12px);
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    nav.h-navbar {
+      max-height: 90px;
+    }
+  
+    .hero .search input {
+      background: rgba(0, 0, 0, 0.92);
+      font-size: 20px;
+      padding: 5px 5px 5px 10px;
+      height: 60px;
+    }
+  
+    .hero .search button {
+      height: 48px;
+      width: 48px;
+      line-height: 48px;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    nav .navbar-nav li.navbar-item a {
+      padding: 0 10px;
+    }
+  
+    .row {
+      width: 100%;
+    }
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+  padding: 20px;
+  background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+  margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  }
+  
+  input[type=submit]:hover {
+  opacity: 0.8;
+  }
+  .search {
+  --padding: 14px;
+  
+  width: max-content;
+  display:flex;
+  align-items: center;
+  padding: var(--padding);
+  padding: 14px;
+  border-radius: 28px;
+  background: #f6f6f6;
+  width: 600px;
+  transition: background 0.25s;
+  }
+  .search-input:focus-within {
+  background: #f1f1f1;
+  }
+  .search-input {
+  font-size: 16px;
+  font-family: Poppins;
+  color: #333333;
+  margin-left: var(--padding);
+  outline:none;
+  border:none;
+  background:transparent;
+  flex:1;
+  }
+  .search-input::placeholder {
+  color: rgba(0,0,0,0.5);
+  
+  }
+  .search-icon::placeholder {
+  color: rgba(0,0,0,0.5);
+  }
+
+  .tagline {
+    text-align: center;
+    color: #078495;
+    padding-top: 10px;
+    font-family: Poppins;
+  }
