@@ -234,9 +234,17 @@
   }
   
   /* Add some padding and a grey background color to containers */
-  .container {
+  .container-subscribe {
   padding: 20px;
   background-color: #f1f1f1;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  }
+
+  .container-subscribe2 {
+  margin:auto;
+  width: 25%;
   }
   
   /* Style the input elements and the submit button */
@@ -249,14 +257,10 @@
   box-sizing: border-box;
   }
   
-  /* Add margins to the checkbox */
-  input[type=checkbox] {
-  margin-top: 16px;
-  }
   
   /* Style the submit button */
   input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #078495;
   color: white;
   border: none;
   }
@@ -304,3 +308,65 @@
     padding-top: 10px;
     font-family: Poppins;
   }
+
+  .weather-widget {
+    border: 1px black solid;
+    width: 25%;
+    background: linear-gradient( #078495, #01529D);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .weatherText {
+    color: #04AA6D;
+    font-size: 20px;
+  }
+
+  .weatherTitle {
+    font-size: 25px;
+  }
+
+  /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #e1306c;
+  color: white;
+}
+
+.siteFooter{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
