@@ -19,3 +19,31 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${lon
         weatherContainer.innerHTML = weatherHTML;
     })
     .catch(error => console.error('Error fetching weather data:', error));
+
+    function closePopup() {
+        document.getElementById('thankyou-popup').style.display = 'none';
+      }
+      
+      function showPopup() {
+        document.getElementById('thankyou-popup').style.display = 'block';
+      }
+      
+      document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+          showPopup();  
+      });
+
+    document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const name = document.querySelector('[name="name"]').value;
+        const email = document.querySelector('[name="mail"]').value;
+    
+        if (!name || !email) { 
+          alert('Please fill in all fields');
+          return;
+        }
+    
+        console.log('Form Data:', name, email); 
+        showPopup();
+    });
+    

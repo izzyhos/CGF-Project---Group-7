@@ -83,22 +83,27 @@
           </div>
     </div>
     <div>
-      <form action="action_page.php">
-        <div class="container-subscribe">
-          <h2>Subscribe to our Newsletter</h2>
-          <p>Stay updated on all things Lanzarote. Subscribe to our newsletter for exclusive travel tips, deals, and insider insights straight to your inbox!
-          </p>
-        </div>
+      <form id="subscribe-form"> <div class="container-subscribe">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay updated on all things Lanzarote. Subscribe to our newsletter for exclusive travel tips, deals, and insider insights straight to your inbox!
+        </p>
+      </div>
 
-        <div class="container-subscribe2" style="background-color:white">
-          <input type="text" placeholder="Name" name="name" required>
-          <input type="text" placeholder="Email address" name="mail" required>
+      <div class="container-subscribe2" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+      <div class="container-subscribe2">
+        <input type="submit" value="Subscribe">
+      </div>
+</form>
+      <div id="thankyou-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h2 class="popup-text">Thank you for subscribing!</h2>
         </div>
-        <div class="container-subscribe2">
-          <input type="submit" value="Subscribe">
-        </div>
-        </form>
-      </form>
+      </div>
+      
       <footer class="siteFooter">
         <hr>
         <p>Contact Us:</p>
